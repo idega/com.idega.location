@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <name>idega location</name>
+  <artifactId>com.idega.location</artifactId>
+  <currentVersion>SNAPSHOT</currentVersion>
+  <inceptionYear>2007</inceptionYear>
+  <shortDescription>location</shortDescription>
+  <description>location</description>
+  <versions>
+  </versions>
+  <developers>
+    <developer>
+      <id>tryggvil</id>
+      <name>Tryggvi Larusson</name>
+      <email>tryggvi@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+    <developer>
+      <id>thomas</id>
+      <name>Thomas Hilbig</name>
+      <email>thomas@idega.is</email>
+      <organization/>
+      <roles/>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.core</artifactId>
+      <version>3.1.0</version>
+      <type>jar</type>
+      <url>http://www.idega.com/</url>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+    </unitTest>
+  </build>
+</project>
